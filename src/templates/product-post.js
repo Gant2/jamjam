@@ -36,7 +36,7 @@ class ProductPostTemplate extends React.Component {
               }}
             >
               {post.frontmatter.date}
-              <img  src={post.frontmatter.image} alt=""></img>
+              {post.frontmatter.image}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
