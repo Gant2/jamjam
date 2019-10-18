@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import Header from "../components/header"
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <Header />
         <SEO title="All posts" />
         <Bio />
         {posts.map(({ node }) => {
@@ -42,6 +44,7 @@ class BlogIndex extends React.Component {
             </article>
           )
         })}
+        
       </Layout>
     )
   }
