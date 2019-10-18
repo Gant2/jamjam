@@ -5,7 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import Header from "../components/header"
+import Header from "../components/Header"
 
 class BlogIndex extends React.Component {
   render() {
